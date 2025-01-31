@@ -6,39 +6,43 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-01-31 16:05+0000\n"
+"Last-Translator: Arnaud LAYEC <arnaudlayec@gmail.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: stock_picking_return_restricted_qty
 #: model:ir.model.fields,help:stock_picking_return_restricted_qty.field_stock_picking_type__restrict_return_qty
 msgid ""
 "Enable this option to restrict returning more quantities than delivered."
 msgstr ""
+"Activer cette option pour restreindre le retour de plus de quantité que "
+"livrée initialement."
 
 #. module: stock_picking_return_restricted_qty
 #: model:ir.model,name:stock_picking_return_restricted_qty.model_stock_picking_type
 msgid "Picking Type"
-msgstr ""
+msgstr "Type de transfert"
 
 #. module: stock_picking_return_restricted_qty
 #: model:ir.model.fields,field_description:stock_picking_return_restricted_qty.field_stock_picking_type__restrict_return_qty
 msgid "Restrict Return Quantity"
-msgstr ""
+msgstr "Restreindre la quantité de retour"
 
 #. module: stock_picking_return_restricted_qty
 #: model:ir.model,name:stock_picking_return_restricted_qty.model_stock_return_picking
 msgid "Return Picking"
-msgstr ""
+msgstr "Transfert de retour"
 
 #. module: stock_picking_return_restricted_qty
 #: model:ir.model,name:stock_picking_return_restricted_qty.model_stock_return_picking_line
 msgid "Return Picking Line"
-msgstr ""
+msgstr "Ligne de transfert de retour"
 
 #. module: stock_picking_return_restricted_qty
 #. odoo-python
@@ -46,4 +50,4 @@ msgstr ""
 #: code:addons/stock_picking_return_restricted_qty/wizard/stock_picking_return.py:0
 #, python-format
 msgid "Return more quantities than delivered is not allowed."
-msgstr ""
+msgstr "Retourner plus de quantité que livrée n'est pas autorisé."
