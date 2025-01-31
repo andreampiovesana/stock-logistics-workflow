@@ -21,14 +21,14 @@ class StockMove(models.Model):
         store=True,
     )
 
-    @api.model
-    def create(self, values):
-        move = super(StockMove, self).create(values)
-        # We do not reset the sequence if we are copying a complete picking
-        # or creating a backorder
-        if not self.env.context.get("keep_line_sequence", False):
-            move.picking_id._reset_sequence()
-        return move
+    @api.model_create_multi
+    def create(self, vals_list):
+        moves = super(StockMove, self).create(val_list)
+        for move in moves:
+            # We do not reset the sequence if we are copying a complete picking
+            # or creating a backorder
+            if not self.env.context.get("keep_line_sequence", False):
+                move.picking_id._reset_sequence()
 
 
 class StockMoveLine(models.Model):
