@@ -23,7 +23,7 @@ class StockMove(models.Model):
 
     @api.model_create_multi
     def create(self, vals_list):
-        moves = super(StockMove, self).create(val_list)
+        moves = super(StockMove, self).create(vals_list)
         for move in moves:
             # We do not reset the sequence if we are copying a complete picking
             # or creating a backorder
